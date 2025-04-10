@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ffaad4, #ffd6a5);
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .enjoy {
+    font-size: 23px;
+    margin-bottom: 0.5rem;
+  }
+  
+  #countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  #confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .cake {
+    width: 300px;
+    height: auto;
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  /* Optional: Add a simple bounce effect */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
