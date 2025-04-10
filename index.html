@@ -3,23 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Birthday!</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .tap-box {
+      background: #ff69b4;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 12px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .tap-box:hover {
+      transform: scale(1.05);
+    }
+
+    .hint {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="hbd.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <div class="tap-box" onclick="goToBirthday()">Tap to continue</div>
 
-  <div class="container">   
-    <img src="cake.gif" alt="Birthday Cake" class="cake" />
-    <h1>Happy Birthday, [Name]!</h1>
-    <p class="enjoy">Enjoy your day!</p>
-  </div>
-
-  <canvas id="confetti-canvas"></canvas>
-
-  <script src="script.js"></script>
+  <script>
+    function goToBirthday() {
+      window.location.href = "hbd.html";
+    }
+  </script>
 </body>
 </html>
