@@ -3,8 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
   }
-
-body {
+  
+  body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom right, #ffaad4, #ffd6a5);
@@ -20,22 +20,24 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding: 0 5vw;
+    width: 100%;
   }
   
   h1 {
-    font-size: 3rem;
+    font-size: 7vw;
     margin-bottom: 1rem;
     margin-top: 0.2rem;
     text-shadow: 2px 2px #000;
   }
   
   .enjoy {
-    font-size: 23px;
+    font-size: 5vw;
     margin-bottom: 0.5rem;
   }
   
   #countdown {
-    font-size: 2rem;
+    font-size: 5vw;
     font-weight: bold;
     color: #fff;
   }
@@ -50,7 +52,8 @@ body {
   }
   
   .cake {
-    width: 300px;
+    width: 60vw;
+    max-width: 300px;
     height: auto;
     animation: bounce 2s infinite ease-in-out;
   }
@@ -64,3 +67,19 @@ body {
       transform: translateY(-10px);
     }
   }
+  
+  /* Media Queries for better font scaling on larger screens */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .enjoy {
+      font-size: 1.5rem;
+    }
+  
+    #countdown {
+      font-size: 2rem;
+    }
+  }
+  
